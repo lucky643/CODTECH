@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Arial', sans-serif;
+     background-color: #0a0a0a;
+     color: #f0f0f0;
+     line-height: 1.6;
+     overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px 50px;
+     background-color: rgba(10, 10, 10, 0.95);
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index: 1000;
+}
+
+.navbar .logo {
+     font-size: 1.8rem;
+     font-weight: bold;
+     color: #f0f0f0;
+}
+
+.navbar ul {
+     list-style: none;
+     display: flex;
+     gap: 30px;
+}
+
+.navbar ul li a {
+     color: #f0f0f0;
+     text-decoration: none;
+     font-size: 1.1rem;
+     padding: 8px 20px;
+     border-radius: 5px;
+     transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+     background-color: #0044ff;
+}
+
+/* Hero Section */
+.hero {
+     height: 100vh;
+     background-image: url('./img/bugatti1.jpg');
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     position: relative;
+}
+
+.hero::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     /* Dark overlay for readability */
+}
+
+.hero-content {
+     z-index: 2;
+     color: #f0f0f0;
+}
+
+.hero h1 {
+     font-size: 4rem;
+     text-transform: uppercase;
+     letter-spacing: 4px;
+}
+
+.hero p {
+     font-size: 1.5rem;
+     margin: 20px 0;
+}
+
+.cta-button {
+     background-color: #0044ff;
+     color: #fff;
+     padding: 10px 30px;
+     font-size: 1.2rem;
+     border: none;
+     border-radius: 5px;
+     text-transform: uppercase;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     text-decoration: none;
+}
+
+.cta-button:hover {
+     background-color: #002699;
+}
+
+/* Promotion Section */
+.promotion {
+     background-image: url('./img/bugatti2.jpg');
+     background-size: cover;
+     background-position: center;
+     padding: 80px 50px;
+     text-align: center;
+     position: relative;
+}
+
+.promotion::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.6);
+     z-index: 1;
+}
+
+.promo-container {
+     position: relative;
+     z-index: 2;
+     max-width: 1000px;
+     margin: 0 auto;
+     color: #f0f0f0;
+}
+
+.promotion h2 {
+     font-size: 3rem;
+     color: #0044ff;
+     margin-bottom: 20px;
+}
+
+.promotion p {
+     font-size: 1.2rem;
+     line-height: 1.8;
+     margin-bottom: 40px;
+}
+
+.promo-image {
+     width: 100%;
+     max-width: 800px;
+     margin: 40px 0;
+     border-radius: 10px;
+}
+
+.cta-button.secondary {
+     background-color: transparent;
+     border: 2px solid #0044ff;
+}
+
+.cta-button.secondary:hover {
+     background-color: #0044ff;
+     color: #fff;
+}
+
+/* Footer Section */
+.footer {
+     padding: 20px;
+     background-color: #0a0a0a;
+     text-align: center;
+}
+
+.footer p {
+     color: #999;
+     font-size: 0.9rem;
+}
